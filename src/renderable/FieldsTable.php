@@ -55,6 +55,29 @@ class FieldsTable extends \samsoncms\api\field\Table implements RenderInterface
     }
 
     /**
+     * Set index view path.
+     * @param string $indexView Index view path
+     * @return $this Chaining
+     */
+    public function indexView($indexView)
+    {
+        $this->indexView = $indexView;
+        return $this;
+    }
+
+    /**
+     * Set row view path.
+     * @param string $rowView Row view path
+     * @return $this Chaining
+     */
+    public function rowView($rowView)
+    {
+        $this->rowView = $rowView;
+
+        return $this;
+    }
+
+    /**
      * Render table row.
      *
      * @param Row $row Collection of column values.
