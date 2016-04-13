@@ -64,7 +64,7 @@ class Entity extends Generic
         parent::__construct(null === $query ? new dbQuery() : $query);
 
         // Work only with active entities
-        $this->active(true);
+        //$this->active(true);
     }
 
     /**
